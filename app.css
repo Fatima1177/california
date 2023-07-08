@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Readex+Pro:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* nav started */
+nav>.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 41px 10px;
+}
+nav>.container>ul>li{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #000000;
+} 
+
+nav>.container>ul {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+.search{
+    cursor: pointer;
+}
+nav>.container>.btn-c {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+select>option{
+    font-family: 'Inter';
+    font-weight: 400;
+    cursor: pointer;
+    color: #232E25;
+    border-bottom: 1px solid transparent;
+    transition: .2s;
+}
+nav>.container>ul>li {
+    font-family: 'Inter';
+    font-weight: 400;
+    cursor: pointer;
+    color: #232E25;
+    border-bottom: 1px solid transparent;
+    transition: .2s;
+}
+nav>.container>ul>li:hover {
+    color: black;
+    border-bottom: 1px solid black;
+}
+.search {
+    background: none;
+}
+/* nav end */
+/* hero */
+.hero{
+    width: 100%;
+    height: 600px;
+    background-position: center;
+}
+.hero>.container{
+    background: #DCE5E2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    gap: 40px;
+}
+.hero-txt>h1{
+    max-width: 600px ;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 70px;
+    font-family: 'Readex Pro';
+    color: #000000;
+}
+.hero-txt>p{
+    font-family: 'Inter';
+    max-width: 600px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-top: 19px;
+}
+.hero-txt>button{
+    background: none;
+    border: 1px solid #000000;
+    border-radius: 200px;
+    padding: 14px 53px;
+    margin-top: 30px;
+    transition: .2s;
+    cursor: pointer;
+}
+.hero-txt>button:hover {
+    background: #232E35;
+    color: #ffff;
+}
+.hero>.container>img{
+    padding: 39px 0 0 0;
+}
+/*nav-section start*/
+.nav-section>.container{
+    display: flex;
+    gap: 16px;
+}
+.nav-section>.container>.gallery-c{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 56px;
+}
+.gallery-c>.laptop{
+    padding: 0 42px;
+    cursor: pointer;
+    transition: .3s;
+}
+.gallery-c>.laptop:hover{
+    transform: scale(0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+.gallery-c>.watch-c{
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery-c>.watch-c:hover{
+    transform: scale(0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.gallery-c>.watch-c>.txt-watch{
+    padding: 42px;
+}
+.gallery-c>.laptop>.txt-laptop>p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: right;
+    color: #000000;
+}
+.gallery-c>.laptop>.txt-laptop>h2{
+    font-family: 'Readex Pro';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: right;
+    color: #000000;
+}
+.gallery-c>.watch-c>.txt-watch>p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: right;
+    color: #000000;
+}
+.gallery-c>.watch-c>.txt-watch>h2{
+    font-family: 'Readex Pro';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: right;
+    color: #000000;
+    max-width: 200px;
+}
+.nav-section>.container>.gallery-s {
+    display: flex;  
+    gap: 16px;
+}
+.gallery-s>.phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s;
+}
+.gallery-s>.phone:hover{
+    transform: scale(0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.gallery-s>.phone>.txt-phone>p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    margin-top: 40px;
+}
+.gallery-s>.phone>.txt-phone>h2{
+    font-family: 'Readex Pro';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+    max-width: 250px;
+    padding: 0 0 0 20px;
+}
+.gallery-s>.ipad{
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gallery-s>.ipad:hover{
+    transform: scale(0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.gallery-s>.ipad>.txt-ipad>p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+}
+.gallery-s>.ipad>.txt-ipad>h2{
+    font-family: 'Readex Pro';
+    max-width: 300px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+}
+/*nav-section end*/
+/*products start*/
+.products-section>.container{
+    background: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding: 40px;
+}
+.products-section>.container>.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.products-section>.container>.product:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #7b7a8a;
+}
+.products-section>.container>.product>img{
+    width: 200px;
+    height: 270px;
+}
+.name>h3{
+    font-family: 'Readex Pro';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+    padding: 10px 20px;
+}
+.name>p{
+    padding: 10px 20px;
+    margin-top: 9px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4B4B4B;
+}
+.name>p{
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+#centerTitle {
+    text-align: center;
+    font-family: 'Readex Pro';
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+    padding: 25px;
+}
+#centerHeader {
+    font-family: 'Readex Pro';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+    text-align: center;
+}
+/*products end*/
+/*store start*/
+.store>.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 28px;
+}
+.store>.container>.explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px 70px 0 70px;
+    background: #F8F9FA;
+    border-radius: 16px;
+}
+.store>.container>.explore>.txt-explore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.store>.container>.explore>button{
+    background: none;
+    border: 1px solid #000000;
+    border-radius: 200px;
+    padding: 14px 60px;
+    margin-top: 25px;
+    transition: .3s;
+    cursor: pointer;
+}
+.store>.container>.explore>button:hover{
+    transform: scale(0.9);
+}
+.store>.container>.explore>.txt-explore>p{
+    font-family: 'Readex Pro';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+}
+.store>.container>.explore>.txt-explore>h2{
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+}
+.store>.container>.explore>button{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+}
+.store>.container>.explore>button:hover{
+    background: #232E35;
+    color: #ffff;
+}
+.store>.container>.explore>img{
+    width: 300px;
+    height: 300px; 
+}
+/*store end*/
+.reclame>.container{
+    display: flex;
+    align-items: start;
+    gap: 35px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+.reclame>.container>img{
+    padding: 20px;
+}
+.p-group>p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 23px;
+    padding: 10px 0 0 0;
+    max-width: 600px;
+}
+/*search start*/
+.search>.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-c{
+    display: flex;
+    align-items: center;
+    border: px solid black;
+    gap: 20px;
+    background: #F8F9FA;
+    border: 1px solid #C5C5C5;
+    border-radius: 100px;
+    padding: 15px 17px;
+    margin: 20px 0;
+}
+.search-c>input{
+    width: 400px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    background: none;
+}
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+}
+.btns>button{
+    font-family: 'Inter';
+    font-weight: 400;
+    border: 1px solid black;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 12px 22px 13px 22px;
+    background: #FFFFFF;
+    border-radius: 200px;
+    margin: 5px 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+.btns>button:hover{
+    background: #232E35;
+    color: #ffff;
+}
+.btns-s>input{
+    width: 300px;
+    height: 45px;
+    background: #DCE5E2;
+    border-radius: 54px 0px 0px 54px;
+    border: 1px solid black;
+    padding: 16px 100px 17px 32px;
+    flex: 1;
+    margin: 0 0 20px 0;
+}
+.btns-s>button{
+    float: right;
+    background: #000000;
+    border-radius: 0px 200px 200px 0px;
+    cursor: pointer;
+    height: 45px;
+    width: 135px;
+    color: #ffff;
+    transition: .2s;
+}
+.btns-s>button:hover {
+    background: #7b7a8a;
+    color: white;
+}
+.search>.container>.search-img{
+    padding: 27px 100px 200px 100px;
+    background: #DCE5E2;
+    width: 935px;
+    height: 500px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search>.container>.search-img>img{
+    margin-top: 10px;
+}
+/*search end*/
+/*site-footer start*/
+.footer-nav>.container {
+    background: #F8F9FA;
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 29px 73px 80px 73px;
+}
+.footer-nav>.container>.california> p{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    max-width: 300px;
+    color: #000000;
+}
+.box {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 100px;
+}
+.box-card>ul>li {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 40px;
+    color: #000000;
+    cursor: pointer;
+}
+.box-card>ul>h1 {
+    font-family: 'Readex Pro';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+}
+/*site-footer end*/
+/*footer start*/
+footer>.container{
+    display: flex;
+    justify-content: space-between;
+    background: #F8F9FA; 
+}
+footer>.container>p{
+    font-family: 'Readex Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    
+}
+/*footer end*/
